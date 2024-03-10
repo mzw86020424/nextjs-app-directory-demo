@@ -1,4 +1,5 @@
 import './globals.css';
+import Header from './Header';
 import { Noto_Sans_JP } from 'next/font/google'
 
 export const metadata = {
@@ -19,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={NotoSansJP.className}>{children}</body>
+      <body className={NotoSansJP.className}>
+          {/* 7. 共通ヘッダー */}
+          <Header></Header>
+        {children}
+        </body>
     </html>
   )
 }
