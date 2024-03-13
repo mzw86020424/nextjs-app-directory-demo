@@ -1,7 +1,7 @@
 // 1. フックを用いているためClient Componentsとして定義
 'use client'
 import Link from "next/link";
-import useSWR from "swr";
+import useSWR from "swr"; // gpt:https://sl.bing.net/dXgGZ3XbLsO
 import { Note, zNotes } from "./type";
 
 type Props = {
